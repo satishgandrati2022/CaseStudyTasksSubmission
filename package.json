@@ -1,17 +1,11 @@
 {
-  "name": "sample-node-app",
+  "name": "static-website-code-master",
   "version": "1.0.0",
-  "description": "first node app",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vinodh",
-  "license": "ISC",
-  "dependencies": {
-    "@azure/storage-blob": "^12.9.0",
-    "express": "^4.17.3",
-    "express-fileupload": "^1.3.1",
-    "mongodb": "^4.6.0"
-  }
+  "author": "",
+  "license": "ISC"
 }

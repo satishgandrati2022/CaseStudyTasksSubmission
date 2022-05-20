@@ -10,11 +10,11 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'c9d2fc51-0bf5-4aed-93f7-9cbe55d8ec5b'
-  imageRepository: 'casestudynodejsapi'
+  dockerRegistryServiceConnection: '73217322-6e5d-4978-aeae-c8c4caa4dee8'
+  imageRepository: 'staticwebsite'
   containerRegistry: 'registrytaskcs.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Build.BuildId)'
+  tag: latest
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -26,7 +26,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: Taskpool-cs
+      Taskpool-cs
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
